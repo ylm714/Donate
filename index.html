@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title>boy</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jquery-1.4.4.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			function nextscroll(){
+
+						// var vcon = $("#slideshow");
+						// var offset = ($("#slideshow li").width())*-1;
+	
+							 if ($("#slideshow ul li").first().attr("class")==""&& $("#slideshow ul li").last().attr("class")=="caption") 
+							 {
+							 	$("#slideshow ul li").first().addClass("caption");
+							 	$("#slideshow ul li").last().removeClass("caption");
+							 }
+
+							 else if ($("#slideshow ul li").first().attr("class")=="caption"&& $("#slideshow ul li").last().attr("class")=="") 
+							 {
+							 	$("#slideshow ul li").last().addClass("caption");
+							 	$("#slideshow ul li").first().removeClass("caption");
+							 }
+				};
+				setInterval(nextscroll,5000)
+		})
+  	</script>
+</head>
+<body>
+	<section id="slide">
+		<div id="slideshow">
+			<ul>
+				<li class="caption"><img src="img/slider1.jpg" alt="slider1"></li>
+				<li ><img src="img/slider3.jpg" alt="slider3"></li>
+			</ul>
+		</div>
+		<article>
+			helping children to make a 
+			<b>better world</b>
+			, donate now<br/>
+    		<a href="" title="">MAKE DONATION</a>
+    		<p>Please click here to make a donation now</p>
+		</article>
+	</section>
+	<header>
+		<section id="content">
+			<h1><strong>CHARITY</strong>CENTER</h1>
+        	<b>CALL US NOW - TOLL FREE
+        		<span class="one">1</span>
+        		<span class="rest">-501-154-844</span>
+        	</b>
+		</section>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="" title="homepage">HOME PAGE</a></li>
+			<li><a href="" title="whoweare">WHO WE ARE</a></li>
+			<li><a href="" title="makedonations">MAKE DONATIONS</a></li>
+			<li><a href="" title="ourwork">OUR WORK</a></li>
+			<li><a href="" title="hotnews">HOT NEWS</a></li>
+			<li><a href="" title="contacts">CONTACTS</a></li>
+		</ul>
+	</nav>
+	<section id="encard">
+		<article>
+			<h2>Charity project</h2>
+			<img src="img/photo1.png">
+			<p>Cras egestas malesuada augue, vitae commodo nisl iaculis non. In vulputate lacus ac risus rutrum egestas quis et purus. Nulla facilisi. Donec adipiscing aliquam ante eu porttitor. Vestibulum sagittis sapien eu magna ultricies sed hendrerit neque laoreet.</p>
+			<a href="#">READ MORE</a>
+		</article>
+		<article>
+			<h2>Family program</h2>
+			<img src="img/photo2.png">
+			<p>Cras egestas malesuada augue, vitae commodo nisl iaculis non. In vulputate lacus ac risus rutrum egestas quis et purus. Nulla facilisi. Donec adipiscing aliquam ante eu porttitor. Vestibulum sagittis sapien eu magna ultricies sed hendrerit neque laoreet.</p>
+			<a href="#">READ MORE</a>
+		</article>
+		<article>
+			<h2>Latest news</h2>
+			<img src="img/photo2.png">
+			<p>Cras egestas malesuada augue, vitae commodo nisl iaculis non. In vulputate lacus ac risus rutrum egestas quis et purus. Nulla facilisi. Donec adipiscing aliquam ante eu porttitor. Vestibulum sagittis sapien eu magna ultricies sed hendrerit neque laoreet.</p>
+			<a href="#">READ MORE</a>
+		</article>
+	</section>
+	<section id="special">
+		<div class="twitter">
+			<a href="" title"">Follow CharityCenter on Twitter</a>
+		</div>
+    	<div class="rss">
+    		<a href="" title="">RSS latest news on CharityCenter</a>
+    	</div>
+    	<span class="news">NEWSLETTER</span>
+    	<form>
+    		<input name="" type="text">
+    		<input name="" value="OK" type="button">
+    	</form> 
+	</section>
+	<footer>
+		<article id="donation">
+			<h2>Last donation</h2>
+			<p>Cras egestas malesuada augue, vitae commodo nisl iaculis non. ultricies sed hendrerit.</p>
+			<ul>
+	            <li>today 8:30 am - <strong>$30</strong>, thank you!
+				<li>today 5:18 am - <strong>$10</strong>, thank you!
+				<li>today 4:14 am - <strong>$220</strong>, thank you!
+        	</ul>
+			<a href="">ARCHIVES</a>
+		</article>
+		<article id="testimonials">
+			<h2>Testimonials friends</h2>
+			<div class="portrait">
+				Cras egestas malesuada augue, vitae commodo nisl iaculis non. In vulputate lacus ac risus rutrum egestas quis et purus. Nulla facilisi. <strong>Writed today by Laureen</strong>
+			</div>
+			<div class="portrait">
+				Vitae commodo nisl iaculis non. In vulputate lacus ac risus rutrum egestas quis et purus. Nulla facilisi. <strong>Writed today by John Kroeal</strong>
+			</div>
+			<div class="publish">
+				1245 testimonials published on <img src="img/logo_footer.png" alt=""/><span class="logo"><strong>CHARITY</strong>CENTER</span> <a href="">click here to publish your !</a>
+			</div>
+		</article>
+	</footer>
+</body>
+</html>
